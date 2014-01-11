@@ -1,0 +1,6 @@
+This is a very basic application that demonstrates Semantic Framework fundamentals. Semantic Framework provides Semantic-View pattern for web application. This sample shows the following items
+
+- Creating action instances.
+- Routing.
+- Linking to assets.
+- View Templating.
