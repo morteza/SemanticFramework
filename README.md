@@ -9,6 +9,8 @@ Its template engine is plugged as a complement to the semantic organization of w
 
 Semantic Framework extends SWRL and OWL, implementing proof of concept for Semantic-View software pattern. Comparing to MVC, SV provides models and logics behind an application via modern semantic web solutions (OWL, SWRL, and SPARQL).
 
+**The goal of _Semantic Framework_ is to develop a complete web application in a single OWL ontology file.**
+
 [ ] TODO: Describe the pattern (snippets from the draft proposal).
 
 ## License
