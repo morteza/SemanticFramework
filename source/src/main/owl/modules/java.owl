@@ -1,0 +1,22 @@
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://onto.ir/ontologies/2014/1/semantic_java>
+Annotation(rdfs:comment "Java for Semantic Frameworks provides to run actions via Java codes and expressions.")
+Annotation(rdfs:label "Java Process Extesion for Semantic Framework")
+Annotation(<http://purl.org/dc/terms/creator> "Morteza Ansarinia <ansarinia@me.com>")
+
+Declaration(Class(<http://onto.ir/ontologies/2014/1/semantic_java#JVM>))
+Declaration(Class(<http://onto.ir/ontologies/2014/1/semantic_java#JavaMessage>))
+Declaration(DataProperty(<http://onto.ir/ontologies/2014/1/semantic_java#send>))
+AnnotationAssertion(rdfs:comment <http://onto.ir/ontologies/2014/1/semantic_java#send> "Sends an to JVM, to run as a java process.")
+DataPropertyDomain(<http://onto.ir/ontologies/2014/1/semantic_java#send> <http://onto.ir/ontologies/2014/1/semantic_java#JVM>)
+DataPropertyRange(<http://onto.ir/ontologies/2014/1/semantic_java#send> xsd:string)
+Declaration(NamedIndividual(<http://onto.ir/ontologies/2014/1/semantic_java#jvm_0>))
+ClassAssertion(<http://onto.ir/ontologies/2014/1/semantic_java#JVM> <http://onto.ir/ontologies/2014/1/semantic_java#jvm_0>)
+DataPropertyAssertion(<http://onto.ir/ontologies/2014/1/semantic_java#send> <http://onto.ir/ontologies/2014/1/semantic_java#jvm_0> "System.out.println(\"Hello World\")"^^xsd:string)
+)
